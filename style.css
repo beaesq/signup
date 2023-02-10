@@ -1,0 +1,73 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: initial;
+}
+
+.logo-section {
+  background-image: url("images/moon.jpg");
+  background-color: #194;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  max-width: 35vw;
+  display: flex;
+  flex: initial;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(30, 30, 30, 0.3);
+  height: 100px;
+  gap: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 40vh;
+}
+
+.logo-icon {
+  height: 70px;
+  width: auto;
+}
+
+.logo-text {
+  font-family: 'Poiret One', sans-serif;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.photo-credit-bar {
+  background-color: rgba(30, 30, 30, 0.3);
+}
+
+.credit-text {
+  color: #ffffff;
+  text-align: center;
+  padding: 3px;
+  font-size: 12px;
+}
+
+.credit-text a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.credit-text a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.form-section {
+
+}
