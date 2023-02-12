@@ -144,7 +144,35 @@ a.login:active {
 }
 
 form input {
+  background-color: #ffffff;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
 
+form input[type="password"]:invalid,
+form input[type="email"]:invalid,
+form input[type="tel"]:invalid {
+  border: 1px solid rgb(237, 0, 142);
+  background-color: rgb(245, 204, 229);
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+  outline-style: none;
+}
+
+form input:required:placeholder-shown {
+  background-color: #ffffff;
+  border: 1px solid #D6D9DC;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus {
+  border: 1px solid rgb(237, 0, 142);
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.1);
+  outline-style: none;
 }
 
 form label {
@@ -163,4 +191,25 @@ form label {
 .form-main-row div {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+input + span {
+  position: relative;
+}
+
+input + span::after {
+  position: absolute;
+  top: 0px;
+}
+
+input:invalid[type="email"] + span::after {
+  content: "Please enter a valid email address.";
+  color: rgb(237, 0, 142);
+  font-size: 12px;
+}
+
+input:placeholder-shown[type="email"] + span::after {
+  content: "";
 }
