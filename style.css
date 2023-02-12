@@ -1,5 +1,5 @@
 * {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'M PLUS Rounded 1c', Helvetica, Arial, sans-serif;
 }
 
 button,
@@ -78,6 +78,7 @@ textarea {
 
 .form-header-text {
   font-size: 20px;
+  font-weight: bold;
 }
 
 form .form-main {
@@ -89,7 +90,7 @@ form .form-main {
 
 h1.form-heading {
   font-size: 20px;
-  font-weight: normal;
+  font-weight: bold;
   margin-top: 0px;
 }
 
