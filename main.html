@@ -28,8 +28,9 @@
     <div class="form-section">
       <div class="form-header">
         <div class="form-header-text">Dance! Turn around and 'round and 'round, 飛び回る箒星
-          瞳はアンドロメダ </div>
-        <div class="form-header-text">Like a hula hula hula hula hoop</div>
+          瞳はアンドロメダ Like a hula hula hula hula hoop Stand! Spin the 自己中心愛
+          (Coming now, spinning 'round, spin it right 'round!)</div>
+        <div class="form-header-text">I can make you dance around me like a hula hoop</div>
       </div>
       <form action="main.html" method="post" class="signup-form">
         <div class="form-main">
@@ -59,11 +60,13 @@
           <div class="form-main-row">
             <div class="form-password-row">
               <label for="password">PASSWORD</label>
-              <input type="password" name="password" id="password" required placeholder=" ">
+              <input type="password" name="password" id="password" required placeholder=" " pattern="^(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"">
+              <span></span>
             </div>
             <div class="form-password-row">
               <label for="password-confirm">CONFIRM PASSWORD</label>
-              <input type="password" name="password-confirm" id="password-confirm" required placeholder=" ">
+              <input type="password" name="password-confirm" id="password-confirm" required placeholder=" " pattern="^(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$">
+              <span></span>
             </div>
           </div>
         </div>
